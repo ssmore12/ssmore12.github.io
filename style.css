@@ -61,7 +61,7 @@ body {
 
 .typed-cursor {
   font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
+  font-size: 3vmin;
   color: #3a7999;
   opacity: 1;
   animation: blink 1s infinite;
