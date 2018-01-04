@@ -52,6 +52,11 @@ body {
     vertical-align: middle;
 }
 
+#lowpoly {
+  width: 25vmin;
+  vertical-align: middle;
+}
+
 #typed {
   font-size: 3vmin;
 }
@@ -65,18 +70,6 @@ body {
   color: #3a7999;
   opacity: 1;
   animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
 }
 
 #icons{
@@ -130,6 +123,18 @@ body {
 	background: rgba(0,0,0,0);
 	color: #3a7999;
 	box-shadow: inset 0 0 0 .42vmin #3a7999;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 @-webkit-keyframes appear {
