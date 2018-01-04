@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sarthak More</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="typed.js"></script>
+
+</head>
+<body>
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el"></canvas>
+  </div>
+
+  <script>
+    particlesJS.load('particles-js','particles.json', function() {
+      console.log('particles.json loaded');
+    });
+  </script>
+  <div id="main" class="outer">
+      <div class="inner">
+        <center>
+          <span id="title">Hey, I'm <br><strong>Sarthak More</strong>.</span></br>
+          <span id="typed"></span>
+          <br><br><br>
+
+          <div id="icons">
+            <a href="https://www.facebook.com/ssmore12" class="icon facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/ssmore12" class="icon github"><i class="fa fa-github"></i></a>
+            <a href="mailto:ssmore12@gmail.com" class="icon email"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.youtube.com/channel/UCg0T3eJjoj18mbsXbYhF-BQ" class="icon youtube"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://www.linkedin.com/in/ssmore12/" class="icon linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <br><br>
+          <a href="resume.pdf" target="_blank" class="button">
+            View Resume
+          </a>
+        </center>
+      </div>
+  </div>
+
+
+
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["I like to <strong>solve problems</strong>.", "I like to <strong>design</strong>.",
+      "I like to <strong>learn</strong>.", "I like to <strong>hike</strong>.", "I like to <strong>code</strong>.",
+      "I like to <strong>teach</strong>.", "I like to <strong>sing</strong>.", "I like to <strong>create</strong>.",
+      "I like to <strong>take photos</strong>.", "I like to <strong>make videos</strong>."],
+      smartBackspace: true,
+      typeSpeed: 70,
+      backSpeed: 50,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+      autoInsertCss: true,
+      backDelay: 1000,
+      startDelay: 2000
+    });
+  </script>
+</body>
+</html>

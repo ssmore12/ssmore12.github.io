@@ -1,0 +1,178 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#particles-js {
+  background: #CFD7C7;
+  background-size: cover;
+  width: 100vmax;
+  height: 100vmin;
+  position: fixed;
+}
+#particles-js .particles-js-canvas-el {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  -webkit-animation:
+    appear
+    2s
+    ease
+    0s
+    normal;
+ animation:
+   appear
+   2s
+   ease
+   0s
+   normal;
+}
+
+#main {
+  opacity: 1;
+  border-radius: 5px;
+  float: none;
+  z-index: 1;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #3a7999;
+  align-content: center;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#typed {
+  font-size: 3vmin;
+}
+#title {
+  font-size: 8vmin;
+}
+
+.typed-cursor {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  color: #3a7999;
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#icons{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3a7999;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+	transition: all 500ms ease;
+}
+.icon:hover {
+  background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.button {
+	border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 10px;
+  margin: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+  text-decoration:none;
+  /*
+  -webkit-animation: fadein 1s ease 2s normal;
+  animation: fadein 1s ease 0s normal;
+  */
+	transition: all 500ms ease;
+}
+
+.button:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+@-webkit-keyframes appear {
+  0%{
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes appear {
+  0%{
+	opacity: 0;
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
