@@ -1,3 +1,14 @@
+// body {
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+$background-color: #fff;
+$darker-color: #444;
+$lighter-color: #f2f2f2;
+$font-family: "Lato", sans-serif;
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,13 +22,13 @@ body {
 }
 
 #particles-js {
-  background: #fff;
+  background: $background-color;
+  // background-size: cover;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 1;
 }
-
 #particles-js .particles-js-canvas-el {
   width: 100%;
   height: 100%;
@@ -29,9 +40,9 @@ body {
 #header {
   opacity: 1;
   float: none;
-  font-family: "Lato", sans-serif;
+  font-family: $font-family;
   text-align: center;
-  color: #505050;
+  color: $darker-color;
   align-content: center;
   position: relative;
   height: 100vh;
@@ -57,7 +68,6 @@ body {
 #typed {
   font-size: 3vmin;
 }
-
 #title {
   font-size: 8vmin;
 }
@@ -65,7 +75,7 @@ body {
 .typed-cursor {
   font-family: "Lato", sans-serif;
   font-size: 3vmin;
-  color: #505050;
+  color: $darker-color;
   opacity: 1;
   animation: blink 1s infinite;
 }
@@ -78,7 +88,7 @@ body {
 .icon {
   width: 7vmin;
   height: 7vmin;
-  background-color: #505050;
+  background-color: $darker-color;
   line-height: 7vmin;
   text-align: center;
   vertical-align: middle;
@@ -90,20 +100,19 @@ body {
   box-sizing: content-box;
   border-radius: 50%;
   font-size: 2.8vmin;
-  color: #f2f2f2;
+  color: $lighter-color;
   transition: all 500ms ease;
 }
-
 .icon:hover {
   background: rgba(0, 0, 0, 0);
-  color: #505050;
-  box-shadow: inset 0 0 0 0.42vmin #505050;
+  color: $darker-color;
+  box-shadow: inset 0 0 0 0.42vmin $darker-color;
 }
 
 .button {
   border: none;
-  background: #505050;
-  color: #f2f2f2;
+  background: $darker-color;
+  color: $lighter-color;
   padding: 1.4vmin;
   margin: 1.4vmin;
   font-size: 2.5vmin;
@@ -112,16 +121,16 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   /*
-  -webkit-animation: fadein 1s ease 2s normal;
-  animation: fadein 1s ease 0s normal;
-  */
+-webkit-animation: fadein 1s ease 2s normal;
+animation: fadein 1s ease 0s normal;
+*/
   transition: all 500ms ease;
 }
 
 .button:hover {
   background: rgba(0, 0, 0, 0);
-  color: #505050;
-  box-shadow: inset 0 0 0 0.42vmin #505050;
+  color: $darker-color;
+  box-shadow: inset 0 0 0 0.42vmin $darker-color;
 }
 
 @keyframes blink {
@@ -135,6 +144,7 @@ body {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
@@ -147,6 +157,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -157,6 +168,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -197,5 +209,3 @@ body {
     opacity: 1;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

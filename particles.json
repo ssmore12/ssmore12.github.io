@@ -4,7 +4,7 @@
       "value": 75
     },
     "color": {
-      "value": "#A33115"
+      "value": "#444"
     },
     "size": {
       "value": 2
@@ -16,7 +16,7 @@
       "speed": 4
     },
     "line_linked": {
-      "color": "#A33115",
+      "color": "#444",
       "distance": 150
     }
   },
