@@ -131,5 +131,24 @@
         startDelay: 2000
       });
     </script>
+    <main>
+      <h1>Redirecting</h1>
+      <p id="location"></p>
+    </main>
+    <footer>
+      Powered by 🐑 <a href="https://commons.host" rel="noopener">Commons Host</a>.
+    </footer>
+    <script>
+      if ('URLSearchParams' in window) {
+        const params = new URLSearchParams(location.search)
+        if (params.has('url')) {
+          const to = document.createElement('a')
+          const url = params.get('url')
+          to.href = url
+          to.textContent = url
+          document.querySelector('#location').appendChild(to)
+        }
+      }
+    </script
   </body>
 </html>
